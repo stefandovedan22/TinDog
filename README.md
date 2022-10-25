@@ -1,2 +1,2 @@
 # TinDog
-Practice website, tinder copy
+Practice website, tinder copy html+css+bootstrap
