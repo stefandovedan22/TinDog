@@ -9,14 +9,26 @@ body {
 h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 4.5rem;
-      /* font-size: 5vw; */
+      /* font-size: 4.5vw; */
       color: white;
       font-weight: 900;
       line-height: 1.5;
 }
 
+@media (max-width: 500px) {
+      h1 {
+            font-size: 2rem;
+      }
+}
+
 .container-fluid {
       padding: 1% 15% 5% 15%;
+}
+
+@media (max-width: 992px) {
+      .container-fluid {
+            padding: 1% 4% 5% 4%;
+      }
 }
 
 .navbar {
@@ -26,6 +38,17 @@ h1 {
 
 .navbar-brand {
       font-size: 3rem;
+}
+
+.navbar-toggler-icon {
+      background-image: none;
+}
+
+.navbar-toggler-icon::before {
+      font-family: FontAwesome;
+      content: "\f0c9";
+      color: white;
+      line-height: 1.5;
 }
 
 .nav-link {
@@ -39,7 +62,7 @@ h1 {
 }
 
 .download-btn {
-      margin: 5% 5% 5% 0;
+      margin: 5% 2% 5% 2%;
       padding: 1% 5% 1% 5%;
 }
 
@@ -56,7 +79,7 @@ h1 {
       .title-image {
             position: absolute;
             transform: rotate(0);
-            width: 350px;
+            width: 300px;
             right: 15%;
       }
 }
@@ -70,6 +93,7 @@ h1 {
             position: static;
             transform: rotate(0);
             width: 50%;
+            right: 0;
       }
 }
 
@@ -120,13 +144,21 @@ h1 {
       line-height: 1.5;
 }
 
+@media (max-width: 500px) {
+      .sub3-h2 {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.5;
+      }
+}
+
 .sub3-img {
       border-radius: 50%;
       width: 12%;
       margin-top: 8%;
 }
 
-/* Section 4 */
 #press {
       background-color: #ff4c68;
       padding-bottom: 2%; 
@@ -137,9 +169,17 @@ h1 {
       padding: 7% 20%;
 }
 
+/* Section 4 */
 .sec4-img {
       width: 10%;
       margin: 50px 30px 20px 30px;
+}
+
+@media (max-width: 500px) {
+      .sec4-img {
+            width: 10%;
+            margin: 50px 15px 20px 15px;
+      }
 }
 
 /* Section 5 */ 
@@ -169,6 +209,12 @@ h1 {
       font-size: 3.5rem;
 }
 
+@media (max-width: 500px) {
+      .h2-5 {
+            font-size: 2rem;
+      }
+}
+
 .h3-5 {
       font-weight: 600;
 }
@@ -194,6 +240,16 @@ h1 {
       padding: 10px 40px;
 }
 
+@media (max-width: 500px) {
+      .sub6-h3 {
+            font-size: 1.5rem;
+      }
+
+      .download1-btn {
+            scale: 0.8;
+      }
+}
+
 /* Section 7 */
 #footer {
       margin: 5% auto; 
@@ -210,4 +266,12 @@ h1 {
       color: black;
       font-size: 1.3rem;
       margin: auto 1%;
+}
+
+@media (max-width: 500px) {
+      .sub7-p, .footer-link {
+            font-size: 0.7rem;
+      }
+
+
 }
